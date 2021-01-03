@@ -1,7 +1,4 @@
-function changebg(){
-  var bg=document.getElementsByClassName('.sec');
-  bg.style='background:black';
-}
+
 function display_the_date(){
 var display_date =  document.querySelector('.section1');
 display_date.textContent = new Date().toDateString();
