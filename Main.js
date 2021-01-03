@@ -1,9 +1,9 @@
 function changebg(){
-  var bg=document.getElementsByClassName('.b');
+  var bg=document.getElementsByClassName('.sec');
   bg.style='background:black';
 }
 function display_the_date(){
-var display_date =  document.querySelector('.one');
+var display_date =  document.querySelector('.section1');
 display_date.textContent = new Date().toDateString();
 display_date.style = "background:black;font-size:calc(1rem + 1vw);"
 }
