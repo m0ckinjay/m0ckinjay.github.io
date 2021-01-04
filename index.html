@@ -13,8 +13,26 @@
         <li><a href="http://#"><span>Portfolio</span></a></li>
         <li><a href="http://#"><span>Projects</span></a></li>
         <li><a href="http://#"><span>Contacts</span></a></li>
-      </ul>
+    <div class="Accesibility">
+      <div class="box">
+      <input type="range" min="1" max="5" value="1">
+      </div>
+      <div class="range">3</div>
+    </div>
     </nav>
+<script type="text/javascript">
+var slider = document.querySelector('input');
+console.log(slider.value);
+var range = document.querySelector('.range');
+var body = document.querySelector('body');
+console.log(range.textContent);
+range.textContent=slider.value;
+slider.oninput=function(){
+  range.textContent=this.value;
+
+  body.style.fontSize=((((this.value/10) + 0.7) + "em"));
+}
+</script>
     <div id="main">
 
   <div class="section1"><h1>02<span> | 01</span></div>
